@@ -5,7 +5,7 @@
 
 int [] GetArray()
 {
-    int[] array = new int[4];
+    int[] array = new int[13];
     for (int i = 0; i < array.Length; i++)
         array[i] = new Random().Next(100, 1000);
     return array;
@@ -38,8 +38,8 @@ int Sum1Position(int [] array)
         
     return sum;
 }
-
-// Console.WriteLine(Sum1Position(array));
+Console.WriteLine(String.Join(" ", array));
+Console.WriteLine(Sum1Position(array));
 
 
 
@@ -48,10 +48,11 @@ int Sum1Position(int [] array)
 // Найдите разницу между максимальным и минимальным элементов массива.
 
 // [3 7 22 2 78] -> 76
-
-double [] doubleArr = {3, 7, 22, 2, 78};
+double [] doubleArr = {3.1, 7, 22, 2.5, 78};
 double diffArray(double []array)
 {
+    
+
     double min = array[0];
     for(int i = 0; i < array.Length; i++)
         if(array[i] < min)

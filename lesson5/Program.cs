@@ -134,8 +134,8 @@ int [] Mult(int[] newArray)
     int[] smallArray = new int [size];
     for(int i = 0; i < smallArray.Length; i++)
         smallArray[i] = newArray[i] * newArray[newArray.Length - 1 - i];
-    if(size % 2 == 0)
-        smallArray[size - 1] = newArray[newArray.Length / 2];
+        if(newArray.Length % 2 == 1)
+            smallArray[size - 1] = newArray[newArray.Length / 2];
     return smallArray;
 }
 
